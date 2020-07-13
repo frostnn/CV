@@ -1,0 +1,49 @@
+@import "../../assets/scss/fonts";
+
+body {
+  background: #1d1e24;
+  font-family: "Poppins", sans-serif;
+  color: #aeb0b8;
+}
+.box {
+  background-color: #23262b;
+  box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.07);
+}
+.box {
+  border-radius: 20px;
+  box-shadow: 0px 20px 40px rgba(103, 118, 128, 0.03);
+  padding: 1.875rem;
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.header {
+  display: flex;
+  margin-bottom: 1.875rem;
+}
+
+.header__base-info {
+  margin-left: 1.5rem;
+}
+.header__base-info .title {
+  margin-bottom: 0.125rem;
+}
+.status {
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fcfcfc;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.gutter-top {
+  padding-top: 14.375rem;
+}

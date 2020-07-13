@@ -1,0 +1,21 @@
+.header__right {
+  display: flex;
+  align-items: start;
+  flex: 0 0 50%;
+  padding-left: 1.875rem;
+}
+.header__contact {
+  list-style: none;
+  margin-bottom: 0;
+  width: 50%;
+  color: #fcfcfc;
+}
+.overhead {
+  color: #aeb0b8;
+}
+.overhead {
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+}

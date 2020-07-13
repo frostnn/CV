@@ -1,14 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import HeaderBox from './components/HeaderBox';
+import React from "react";
+import ReactDOM from "react-dom";
 
+import "./assets/scss/normalize.scss";
+import Main from "./Main";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HeaderBox/>
+    <Main />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-
