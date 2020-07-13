@@ -1,7 +1,9 @@
 import React from "react";
 import "./HeaderBoxLeft.scss";
 import photo from "../../assets/img/photo1.png";
-
+import { FiFacebook } from "react-icons/fi";
+import { FaTelegramPlane } from "react-icons/fa";
+import { AiOutlineSkype } from "react-icons/ai";
 const HeaderBoxLeft = ({ data }) => {
   const { name, position } = data;
   return (
@@ -18,18 +20,18 @@ const HeaderBoxLeft = ({ data }) => {
         <div className="status">{position}</div>
         <ul className="header__social">
           <li>
-            <a href="https://www.facebook.com/">
-              <i className="font-icon icon-facebook1"></i>
+            <a href="https://www.facebook.com/profile.php?id=100003600116322">
+              <FiFacebook style={{ height: "1.5em", width: "1.5em" }} />
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com/">
-              <i className="font-icon icon-twitter1"></i>
+            <a href="https://tlgg.ru/@frostnn">
+              <FaTelegramPlane style={{ height: "1.5em", width: "1.5em" }} />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/">
-              <i className="font-icon icon-instagram1"></i>
+              <AiOutlineSkype style={{ height: "1.5em", width: "1.5em" }} />
             </a>
           </li>
         </ul>
