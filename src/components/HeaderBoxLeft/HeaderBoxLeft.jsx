@@ -21,7 +21,7 @@ const HeaderBoxLeft = ({ data }) => {
         <ul className="header__social">
           <li>
             <a href="https://www.facebook.com/profile.php?id=100003600116322">
-              <FiFacebook style={{ height: "1.5em", width: "1.5em" }} />
+              <FiFacebook style={{ height: "1.2em", width: "1.2em" }} />
             </a>
           </li>
           <li>

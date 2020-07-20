@@ -1,5 +1,19 @@
 import React from "react";
+import {
+  FiUser,
+  FiCodesandbox,
+  FiFileText,
+  FiBookOpen,
+  FiBook,
+} from "react-icons/fi";
 import "./AsideNav.scss";
+
+const styleIcons = {
+  height: "3em",
+  width: "3em",
+  marginBottom: "0.5rem",
+  marginTop: "0.25rem",
+};
 
 const AsideNav = () => {
   return (
@@ -7,27 +21,32 @@ const AsideNav = () => {
       <ul className="nav">
         <li className="nav__item">
           <a className="active" href="about.html">
-            <i className="icon-user"></i>About
+            <FiUser style={styleIcons} />
+            About
           </a>
         </li>
         <li className="nav__item">
           <a href="resume.html">
-            <i className="icon-file-text"></i>Resume
+            <FiFileText style={styleIcons} />
+            Resume
           </a>
         </li>
         <li className="nav__item">
           <a href="works.html">
-            <i className="icon-codesandbox"></i>Works
+            <FiCodesandbox style={styleIcons} />
+            Works
           </a>
         </li>
         <li className="nav__item">
           <a href="blog.html">
-            <i className="icon-book-open"></i>Blog
+            <FiBookOpen style={styleIcons} />
+            Blog
           </a>
         </li>
         <li className="nav__item">
           <a href="contact.html">
-            <i className="icon-book"></i>Contact
+            <FiBook style={styleIcons} />
+            Contact
           </a>
         </li>
       </ul>
