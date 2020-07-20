@@ -1,12 +1,16 @@
 import React from "react";
 import "./NavItem.scss";
 
-const NavItem = (props) => {
+const NavItem = ({ link, icon, name, id }) => {
+  const fc = (e) => {
+    e.preventDefault();
+    return console.log(id);
+  };
   return (
     <li className="nav__item">
-      <a href={props.link}>
-        {props.icon}
-        {props.name}
+      <a href={link} onClick={fc}>
+        {icon}
+        {name}
       </a>
     </li>
   );
