@@ -1,4 +1,5 @@
 import React from "react";
+import NavItem from "../NavItem/NavItem";
 import {
   FiUser,
   FiCodesandbox,
@@ -14,41 +15,53 @@ const styleIcons = {
   marginBottom: "0.5rem",
   marginTop: "0.25rem",
 };
+const link = [
+  {
+    id: 1,
+    name: "About",
+    link: "About.html",
+    icon: <FiUser style={styleIcons} />,
+  },
+  {
+    id: 2,
+    name: "Resume",
+    link: "Resume.html",
+    icon: <FiFileText style={styleIcons} />,
+  },
+  {
+    id: 3,
+    name: "works",
+    link: "works.html",
+    icon: <FiCodesandbox style={styleIcons} />,
+  },
+  {
+    id: 4,
+    name: "blog",
+    link: "blog.html",
+    icon: <FiBookOpen style={styleIcons} />,
+  },
+  {
+    id: 5,
+    name: "contact",
+    link: "contact.html",
+    icon: <FiBook style={styleIcons} />,
+  },
+];
 
 const AsideNav = () => {
   return (
     <div className="sidebar box sticky-column">
       <ul className="nav">
-        <li className="nav__item">
-          <a className="active" href="about.html">
-            <FiUser style={styleIcons} />
-            About
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="resume.html">
-            <FiFileText style={styleIcons} />
-            Resume
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="works.html">
-            <FiCodesandbox style={styleIcons} />
-            Works
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="blog.html">
-            <FiBookOpen style={styleIcons} />
-            Blog
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="contact.html">
-            <FiBook style={styleIcons} />
-            Contact
-          </a>
-        </li>
+        {link.map((link, id) => {
+          return (
+            <NavItem
+              link={link.link}
+              name={link.name}
+              icon={link.icon}
+              key={link.id}
+            />
+          );
+        })}
       </ul>
     </div>
   );
